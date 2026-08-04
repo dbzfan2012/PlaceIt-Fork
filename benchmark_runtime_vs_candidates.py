@@ -153,7 +153,7 @@ def render_best_pose(run_dir, image_path):
             renderer=p.ER_TINY_RENDERER,
             physicsClientId=env.physics_client_id,
         )
-        plt.imsave(image_path, np.asarray(rgba).reshape(640, 640, 4))
+        plt.imsave(image_path, np.asarray(rgba, dtype=np.uint8).reshape(640, 640, 4))
     finally:
         env.close()
 
