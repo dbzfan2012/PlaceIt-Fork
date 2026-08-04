@@ -1,0 +1,26 @@
+name: placeit
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy=1.26.4
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - pandas
+  - pillow
+  - pyyaml
+  - tqdm
+  - imageio
+  - astropy
+  - transforms3d
+  - pyquaternion
+  - cmaes
+  - numba
+  - pip:
+      - gym==0.26.2
+      - ribs
+      - pybullet==3.2.6
+      - open3d==0.19.0
